@@ -1,17 +1,12 @@
-export default function Home() {
-  return (
-    <main style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100vh",
-      fontFamily: "Arial"
-    }}>
-      <h1>Meu Apoio TEA</h1>
-      <p>App funcionando 🚀</p>
+export const metadata = {
+  title: "Meu Apoio TEA",
+  description: "App TEA"
+}
 
-      <a href="/auth">Entrar</a>
-    </main>
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-br">
+      <body>{children}</body>
+    </html>
   )
 }
