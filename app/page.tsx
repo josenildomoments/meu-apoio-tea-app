@@ -1,12 +1,7 @@
-export const metadata = {
-  title: "Meu Apoio TEA",
-  description: "App TEA"
-}
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang="pt-br">
-      <body>{children}</body>
-    </html>
+    <div>
+      <h1>Meu Apoio TEA 🚀</h1>
+    </div>
   )
 }
