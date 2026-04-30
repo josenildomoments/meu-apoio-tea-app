@@ -1,25 +1,13 @@
-import Link from "next/link";
+"use client";
 
-export default function Home() {
+import { useRouter } from "next/navigation";
+
+export default function Login() {
+  const router = useRouter();
+
   return (
-    <div style={{ textAlign: "center", marginTop: 100 }}>
-      <h1>Meu Apoio TEA</h1>
-      <p>Plataforma de apoio para famílias e profissionais</p>
-
-      <br />
-
-      <Link href="/login">
-        <button
-          style={{
-            padding: 12,
-            background: "#4CAF50",
-            color: "#fff",
-            borderRadius: 10
-          }}
-        >
-          Entrar
-        </button>
-      </Link>
-    </div>
+    <button onClick={() => router.push("/dashboard")}>
+      Entrar
+    </button>
   );
 }
