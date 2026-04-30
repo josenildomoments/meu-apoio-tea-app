@@ -1,22 +1,31 @@
-export default function Home() {
+import Link from "next/link";
+
+export default function Login() {
   return (
-    <main style={{ padding: 20, textAlign: "center" }}>
-      <h1>Meu Apoio TEA</h1>
+    <div style={{ textAlign: "center", marginTop: 100 }}>
+      <h1>Login</h1>
 
-      <p>Plataforma de apoio para famílias e profissionais</p>
+      <input
+        placeholder="Seu email"
+        style={{ padding: 10, width: "80%", maxWidth: 300 }}
+      />
 
-      <a href="/login">
-        <button style={{
-          padding: 15,
-          marginTop: 20,
-          background: "#4CAF50",
-          color: "#fff",
-          border: "none",
-          borderRadius: 8
-        }}>
+      <br /><br />
+
+      <Link href="/dashboard">
+        <button
+          style={{
+            padding: 12,
+            width: "80%",
+            maxWidth: 300,
+            background: "#000",
+            color: "#fff",
+            borderRadius: 8
+          }}
+        >
           Entrar
         </button>
-      </a>
-    </main>
+      </Link>
+    </div>
   );
 }
