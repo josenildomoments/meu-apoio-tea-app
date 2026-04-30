@@ -1,6 +1,11 @@
-export default function RootLayout({ children }) {
+export const metadata = {
+  title: 'Meu Apoio TEA',
+  description: 'App para famílias e profissionais TEA',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="pt-BR">
       <body>{children}</body>
     </html>
   )
