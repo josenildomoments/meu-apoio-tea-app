@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Meu Apoio TEA 🚀</h1>
-    </div>
+    <main>
+      <h1>Meu Apoio TEA</h1>
+      <p>Site funcionando 🚀</p>
+    </main>
   )
 }
